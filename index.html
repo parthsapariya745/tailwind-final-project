@@ -1,0 +1,705 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seom - SEO Digital Agency HTML</title>
+
+  <!-- link css -->
+  <link rel="stylesheet" href="./src/output.css">
+  <!-- link css -->
+
+  <!-- tailwind css cdn  -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script> 
+  <!-- tailwind css cdn  -->
+
+  <!-- flowbite cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> 
+  <!-- flowbite cdn -->
+
+  <!-- remix icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <!-- remix icon cdn -->
+
+  <!-- splide js cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+  <!-- splide js cdn -->
+
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Bangers&family=Baskervville:ital@0;1&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Enriqueta:wght@400;500;600;700&family=Gantari:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Outline&family=Luckiest+Guy&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+  <!-- google fonts link -->
+</head>
+<style>
+  *{
+    font-family: "Manrope", serif;
+  }
+  .before,.before2{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .before::before{
+    position: absolute;
+    content: "";
+    background-color: #FF7F49;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    transition: 0.7s;
+    border-radius: calc(infinity * 1px);
+    z-index: -1;
+  }
+  .before:hover::before{
+    width: 100%;
+  }
+  .before2::before{
+    position: absolute;
+    content: "";
+    background-color: #FF7F49;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    border-radius: calc(infinity * 1px);
+    z-index: -1;
+    opacity: 0;
+  }
+  .before2:hover::before{
+    opacity: 1;
+  }
+  .star{
+    animation: rotate 10s linear infinite;
+  }
+  @keyframes rotate {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+</style>
+<body>
+  <!-- header section -->
+  <div class="header h-auto bg-[#FDF2ED]">
+    <nav>
+      <div class="navbar py-5 border-b-[1px] border-b-[#bcbcbc] fixed w-full bg-[#FDF2ED] z-10">
+        <div class="flex lg:flex-nowrap flex-wrap items-center justify-between mx-auto p-4 h-full">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="./Assets/header-logo-1.svg" alt="">
+          </a>
+          <button data-collapse-toggle="navbar-multi-level" type="button" class="items-center p-2 w-10 h-10 justify-center text-[20px] rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none" aria-controls="navbar-multi-level" aria-expanded="false">
+            <svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+          <div class="hidden w-full lg:flex lg:w-auto" id="navbar-multi-level">
+            <ul class="flex flex-col font-medium p-4 lg:p-0 mt-4 border text-black lg:flex-row lg:mt-0 lg:border-0 gap-3">
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 duration-500 hover:text-[#FF7F49] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 lg:p-0 md:dark:hover:bg-transparent text-[20px] font-[500]">Home <i class="ri-arrow-down-s-line"></i></a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 duration-500 hover:text-[#FF7F49] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 lg:p-0 md:dark:hover:bg-transparent text-[20px] font-[500]">Pages <i class="ri-arrow-down-s-line"></i></a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 duration-500 hover:text-[#FF7F49] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 lg:p-0 md:dark:hover:bg-transparent text-[20px] font-[500]">Service <i class="ri-arrow-down-s-line"></i></a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 duration-500 hover:text-[#FF7F49] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 lg:p-0 md:dark:hover:bg-transparent text-[20px] font-[500]">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn lg:flex hidden gap-5">
+            <button class="before bg-white px-10 py-3.5 border-t-2 border-l-2 border-r-2 border-b-[5px] border-black rounded-full font-black text-[18px] cursor-pointer hover:text-white">GET IN TOUCH</button>
+            <button class="before2 border-[1px] border-black rounded-[50%] h-[60px] w-[60px] text-[28px] cursor-pointer hover:text-white"><i class="ri-menu-3-line"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="hero flex lg:flex-row flex-col-reverse lg:gap-0 gap-5 items-center pt-40 pb-20">
+      <div class="hero-box lg:w-[52%] w-full">
+        <div class="img grid grid-cols-2">
+          <div class="img-box"><img src="https://hwp.creativegigstf.com/seom/assets/img/shape/shape-1.png" alt=""></div>
+          <div class="img-box flex justify-end"><img src="https://hwp.creativegigstf.com/seom/assets/img/shape/shape-2.png" alt=""></div>
+        </div>
+        <h1 class="sm:text-[65px] text-[50px] font-[900] sm:pl-8 px-3">Grow your Brand with SEO <span class="bg-black text-white">Solutions</span></h1>
+        <p class="text-[28px] sm:pl-8 px-3 pt-4">Boost your online presence, and attract the right audience to grow your business successfully.</p>
+        <div class="btn flex sm:flex-nowrap flex-wrap gap-5 mx-3 mt-20">
+          <button class="before bg-white px-12 py-4 border-t-2 border-l-2 border-r-2 border-b-[5px] border-black rounded-full font-black text-[18px] cursor-pointer hover:text-white sm:w-auto w-full">GET STARTED</button>
+          <button class="before group flex justify-center items-center gap-10 bg-white sm:pl-8 sm:pr-3 py-2 border-t-2 border-l-2 border-r-2 border-b-[5px] border-black rounded-full font-black text-[18px] cursor-pointer hover:text-white sm:w-auto w-full">HOW IT WORKS <i class="ri-arrow-right-up-long-line duration-500 bg-black text-white group-hover:bg-white group-hover:text-black group-hover:rotate-45 rounded-full text-[30px] px-2.5 py-1"></i></button>
+        </div>
+        <div class="aarow w-full flex justify-end relative">
+          <img src="https://hwp.creativegigstf.com/seom/assets/img/shape/shape-3.png" class="absolute top-[-60px] xl:block hidden" alt="">
+        </div>
+      </div>
+      <div class="hero-box lg:w-[48%] w-full lg:pl-16 pl-0 lg:block flex justify-end pr-1">
+        <img src="./Assets/hero-img.png" class="lg:w-[620px] w-[90%]" alt="">
+      </div>
+    </div>
+    <div class="r-container w-full px-3">
+      <div class="record xl:max-w-7xl lg:max-w-5xl mx-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 bg-[#FFE149] border-t-[1px] border-r-[8px] border-b-[8px] border-l-[1px] border-black rounded-[40px] py-7 relative top-[105px]">
+        <div class="record-box flex flex-col items-center">
+          <h3 class="text-[80px] font-[800]">9+</h3>
+          <p class="text-[18px]">Professional Members</p>
+        </div>
+        <div class="record-box flex flex-col items-center">
+          <h3 class="text-[80px] font-[800]">0+</h3>
+          <p class="text-[18px]">Years Experience</p>
+        </div>
+        <div class="record-box flex flex-col items-center">
+          <h3 class="text-[80px] font-[800]">0m+</h3>
+          <p class="text-[18px]">Total Global Happy Customer</p>
+        </div>
+        <div class="record-box flex flex-col items-center">
+          <h3 class="text-[80px] font-[800]">13+</h3>
+          <p class="text-[18px]">Company Winning Awards</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <!-- header section -->
+
+  <!-- service section -->
+  <div class="service-container mt-48 px-3">
+    <h2 class="text-[55px] font-[800]">Our Services</h2>
+    <div class="splide mt-14" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide flex flex-col gap-6 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+            <div class="slider-img rounded-full h-20 w-20 bg-[#FF7F49] flex justify-center items-center">
+              <img src="./Assets/icon-1.svg" alt="">
+            </div>
+            <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">Ui/Ux Design</h2>
+            <p class="text-[18px] leading-[32px]">Simplifying digital experiences with clean, functional, and responsive user interface designs.</p>
+            <p class="font-[800] text-[18px] cursor-pointer">Learn More <i class="ri-arrow-right-long-line"></i></p>
+          </li>
+          <li class="splide__slide flex flex-col gap-6 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+            <div class="slider-img rounded-full h-20 w-20 bg-[#A095FF] flex justify-center items-center">
+              <img src="./Assets/icon-2.svg" alt="">
+            </div>
+            <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">Digital Marketing</h2>
+            <p class="text-[18px] leading-[32px]">Increasing conversions by optimizing digital campaigns across various platforms and channels.</p>
+            <p class="font-[800] text-[18px] cursor-pointer">Learn More <i class="ri-arrow-right-long-line"></i></p>
+          </li>
+          <li class="splide__slide flex flex-col gap-6 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+            <div class="slider-img rounded-full h-20 w-20 bg-[#A9FB50] flex justify-center items-center">
+              <img src="./Assets/icon-3.svg" alt="">
+            </div>
+            <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">Media Outreach</h2>
+            <p class="text-[18px] leading-[32px]">Generating leads by crafting relevant, engaging content tailored to your audience.</p>
+            <p class="font-[800] text-[18px] cursor-pointer">Learn More <i class="ri-arrow-right-long-line"></i></p>
+          </li>
+          <li class="splide__slide flex flex-col gap-6 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+            <div class="slider-img rounded-full h-20 w-20 bg-[#F8C367] flex justify-center items-center">
+              <img src="./Assets/icon-4.svg" alt="">
+            </div>
+            <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">24/7 Support</h2>
+            <p class="text-[18px] leading-[32px]">Providing around-the-clock support to resolve issues instantly, no matter the time.</p>
+            <p class="font-[800] text-[18px] cursor-pointer">Learn More <i class="ri-arrow-right-long-line"></i></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> 
+  <!-- service section -->
+
+  <!-- about section -->
+  <div class="about grid lg:grid-cols-2 grid-cols-1 xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto mt-48 px-3 gap-20">
+    <div class="about-box bg-[url('./Assets/shape-6.png')] w-full bg-contain object-cover bg-no-repeat relative">
+      <img src="./Assets/media-1.png" class="xl:h-[730px] lg:h-[592px] md:h-[896px] sm:h-[760px] relative xl:bottom-[101px] sm:bottom-[100px] object-cover sm:scale-[1] scale-[0.83]" alt="">
+      <div class="sucess bg-white sm:px-14 px-8 sm:py-1 py-2 rounded-[25px] border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black absolute 
+      xl:bottom-[140px] sm:bottom-[120px] bottom-[80px] right-[10px]">
+        <h2 class="xl:text-[80px] md:text-[60px] sm:text-[45px] text-[30px] font-[800] text-center">97%</h2>
+        <p class="text-[18px] relative sm:bottom-[15px] bottom-[7px] text-center">Sucess Rate</p>
+      </div>
+    </div>
+    <div class="about-box flex flex-col gap-[14px]">
+      <h5 class="uppercase text-[18px] font-[500] text-[#ff7f49]">about us</h5>
+      <h1 class="xl:text-[55px] text-[45px] font-[800] xl:leading-[65px] leading-[50px]">Specialists in Tech Hurdles.</h1>
+      <p class="text-[18px] leading-[34px]">Addressing complicated digital tech challenges with customized solutions to streamline processes and improve.</p>
+      <button class="rounded-[20px] border-r-[1px] border-t-[1px] border-b-[5px] border-l-[1px] border-black text-left p-5 text-[18px] font-[500] cursor-pointer duration-500 hover:bg-[#ff7f49] hover:text-white xl:mt-10 lg:mt-2">01. Reporting with full Transparency.</button>
+      <button class="rounded-[20px] border-r-[1px] border-t-[1px] border-b-[5px] border-l-[1px] border-black text-left p-5 text-[18px] font-[500] cursor-pointer duration-500 hover:bg-[#ff7f49] hover:text-white mt-2">02. Graphs and Data Analysis.</button>
+      <button class="before bg-white sm:w-[200px] py-4 border-t-[1px] border-l-[1px] border-r-2 border-b-[5px] border-black rounded-full font-black text-[18px] cursor-pointer hover:text-white xl:mt-14 lg:mt-2">ABOUT US</button>
+    </div>
+  </div> 
+  <!-- about section -->
+
+  <!-- select area -->
+  <div class="select py-20 xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto">
+    <h5 class="uppercase text-[18px] font-[500] text-[#ff7f49] text-center">Why Choose Us</h5>
+    <h1 class="xl:text-[55px] text-[45px] font-[800] xl:leading-[65px] leading-[50px] text-center pt-3">Complete SEO Solution</h1>
+    <p class="text-[18px] text-center pt-3">Addressing complicated digital tech challenges with customized solutions to streamline processes and improve.</p>
+    <div class="select-box grid md:grid-cols-2 grid-cols-1 mt-16 gap-[28px] px-3">
+      <div class="select-list flex flex-col gap-5 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+        <img src="./Assets/icon-5.svg" class="w-[80px]" alt="">
+        <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">Keyword Optimization Plan</h2>
+        <p class="text-[18px] leading-[32px]">Create a keyword strategy to enhance search visibility and improve targeted traffic to your website.p></p>
+      </div>
+      <div class="select-list flex flex-col gap-5 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+        <img src="./Assets/icon-6.svg" class="w-[80px]" alt="">
+        <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">Individualized SEO Strategy</h2>
+        <p class="text-[18px] leading-[32px]">Tailor a personalized SEO strategy to meet your specific business needs and improve search rankings.</p>
+      </div>
+      <div class="select-list flex flex-col gap-5 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+        <img src="./Assets/icon-7.svg" class="w-[80px]" alt="">
+        <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">Extensive Site Assessment</h2>
+        <p class="text-[18px] leading-[32px]">Perform a detailed technical audit to optimize website functionality and search engine health.</p>
+      </div>
+      <div class="select-list flex flex-col gap-5 border-t-[1px] border-r-[5px] border-b-[5px] border-l-[1px] border-black duration-500 hover:border-[#ff7f49] rounded-[25px] px-4 py-10">
+        <img src="./Assets/icon-8.svg" class="w-[80px]" alt="">
+        <h2 class="text-[28px] font-[800] text-black duration-500 cursor-pointer hover:text-[#FF7F49]">Competitor Landscape Study</h2>
+        <p class="text-[18px] leading-[32px]">Evaluate industry competition to identify growth opportunities and enhance your competitive edge.</p>
+      </div>
+    </div>
+  </div> 
+  <!-- select area -->
+
+  <!-- project section -->
+  <div class="project-bg bg-[url('https://hwp.creativegigstf.com/seom/assets/img/bg/bg-1.png')] mt-14 py-32 px-3">
+    <h5 class="uppercase text-[18px] font-[500] text-[#ff7f49] text-center">Our Projects</h5>
+    <h1 class="xl:text-[55px] text-[45px] font-[800] xl:leading-[65px] leading-[50px] text-center pt-3 text-white">Strategic SEO for growth</h1>
+    <p class="text-[18px] text-center pt-3 text-white leading-[30px]">Implementing strategic SEO practices to enhance visibility, attract targeted traffic, and drive sustainable growth for your business online.</p>
+    <div class="project-box grid grid-cols-1 xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto mt-14 gap-[40px]">
+      <div class="project-list group w-full flex sm:flex-row flex-col xl:gap-[250px] lg:gap-[100px] gap-[30px] justify-between sm:items-center bg-[#FF7F49] md:rounded-[115px] rounded-[30px] sm:p-12 p-7 border-r-[5px] border-b-[5px] border-l-[1px] border-t-[1px] border-white">
+        <div class="txt flex sm:flex-row flex-col items-start sm:gap-8">
+          <div class="no text-[25px] font-[600]">01.</div>
+          <div class="main-dtl">
+            <h2 class="sm:text-[40px] text-[30px] font-[800]">Joint SEO Consulting</h2>
+            <p class="text-[18px] leading-[30px]">Analysis of chemical characteristics and composition to determine properties, safety, and quality for various applications or processes.</p>
+          </div>
+        </div>
+        <div class="btn cursor-pointer"><i class="ri-arrow-right-up-long-line duration-500 bg-white text-black group-hover:bg-[#F8C367] rounded-full text-[40px] sm:p-7 p-4"></i></div>
+      </div>
+      <div class="project-list group w-full flex sm:flex-row flex-col xl:gap-[250px] lg:gap-[100px] gap-[30px] justify-between sm:items-center bg-[#A095FF] md:rounded-[115px] rounded-[30px] sm:p-12 p-7 border-r-[5px] border-b-[5px] border-l-[1px] border-t-[1px] border-white">
+        <div class="txt flex sm:flex-row flex-col items-start sm:gap-8">
+          <div class="no text-[25px] font-[600]">02.</div>
+          <div class="main-dtl">
+            <h2 class="sm:text-[40px] text-[30px] font-[800]">SEO Approach for IT</h2>
+            <p class="text-[18px] leading-[30px]">Analysis of chemical characteristics and composition to determine properties, safety, and quality for various applications or processes.</p>
+          </div>
+        </div>
+        <div class="btn cursor-pointer"><i class="ri-arrow-right-up-long-line duration-500 bg-white text-black group-hover:bg-[#F8C367] rounded-full text-[40px] sm:p-7 p-4"></i></div>
+      </div>
+      <div class="project-list group w-full flex sm:flex-row flex-col xl:gap-[250px] lg:gap-[100px] gap-[30px] justify-between sm:items-center bg-[#A9FB50] md:rounded-[115px] rounded-[30px] sm:p-12 p-7 border-r-[5px] border-b-[5px] border-l-[1px] border-t-[1px] border-white">
+        <div class="txt flex sm:flex-row flex-col items-start sm:gap-8">
+          <div class="no text-[25px] font-[600]">03.</div>
+          <div class="main-dtl">
+            <h2 class="sm:text-[40px] text-[30px] font-[800]">Social Media Marketing</h2>
+            <p class="text-[18px] leading-[30px]">Analysis of chemical characteristics and composition to determine properties, safety, and quality for various applications or processes.</p>
+          </div>
+        </div>
+        <div class="btn cursor-pointer"><i class="ri-arrow-right-up-long-line duration-500 bg-white text-black group-hover:bg-[#F8C367] rounded-full text-[40px] sm:p-7 p-4"></i></div>
+      </div>
+    </div>
+    <div class="p-btn xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto">
+      <button class="before w-full py-5 border-t-[1px] border-l-[1px] border-r-2 border-b-[5px] border-white bg-transparent rounded-full font-black text-[18px] cursor-pointer text-white mt-20">ALL PROJECTS</button>
+    </div>
+  </div> 
+  <!-- project section -->
+
+  <!-- feedback part -->
+  <div class="client xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto px-3 py-32 grid lg:grid-cols-2 grid-cols-1 gap-[35px]">
+    <div class="client-box">
+      <h5 class="text-[18px] font-[600]">Client Feedback</h5>
+      <div class="dp-img mt-4"><img src="./Assets/dp-img.png" class="w-[240px]" alt=""></div>
+      <h2 class="text-[55px] leading-[60px] font-[800] pt-5">Clients’ Feedback and Thoughts</h2>
+      <p class="text-[18px] leading-[30px] pt-5">Discover what our clients have to say about their experiences with us and learn how our services have positively impacted their businesses.</p>
+      <button class="before bg-white px-12 py-4 border-t-2 border-l-2 border-r-2 border-b-[5px] border-black rounded-full font-black text-[18px] cursor-pointer hover:text-white sm:w-auto w-full mt-12">VIEW DETAILS</button>
+      <div class="star w-full mt-12 flex justify-center"><img src="https://hwp.creativegigstf.com/seom/assets/img/shape/shape-4.png" alt=""></div>
+      <div class="person-img mt-14 relative">
+        <img src="https://hwp.creativegigstf.com/seom/assets/img/ilustration/ilus-1.png" alt="">
+        <div class="satisfy absolute right-0 top-[120px] border-t-2 border-l-2 border-r-[5px] border-b-[5px] border-black rounded-[30px] sm:p-8 p-5 bg-white">
+          <h3 class="sm:text-[28px] text-[20px] font-[600]">2k+ Satisfy client’s</h3>
+          <div class="star-group flex justify-center gap-1 sm:text-[30px] text-[22px]">
+            <i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="client-box flex flex-col gap-[28px]">
+      <div class="bg-white p-8 rounded-[30px] border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black">
+        <p class="text-[18px] font-[700] mb-10">"Our consultancy, with limited marketing resources, hesitated to hire agencies offering generic service packages."</p><hr>
+        <div class="flex justify-between items-center mt-10">
+          <div class="flex sm:flex-nowrap flex-wrap items-center gap-3">
+            <img src="https://hwp.creativegigstf.com/seom/assets/img/media/media-5.jpg" class="w-16 rounded-full" alt="Olivia Martinez">
+            <div>
+              <h4 class="font-[800] text-[18px]">Olivia Martinez</h4>
+              <p class="text-gray-500">New York, US</p>
+            </div>
+          </div>
+          <div class="star-group flex justify-center gap-1 text-[26px]">
+            <i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-[30px] border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black">
+        <p class="text-[18px] font-[700] mb-10">"As a strategy consultancy managing multiple projects, we had limited resources for online marketing and were hesitant to partner with agencies offering generic packages."</p><hr>
+        <div class="flex justify-between items-center mt-10">
+          <div class="flex sm:flex-nowrap flex-wrap items-center gap-3">
+            <img src="https://hwp.creativegigstf.com/seom/assets/img/media/media-5.jpg" class="w-16 rounded-full" alt="Olivia Martinez">
+            <div>
+              <h4 class="font-[800] text-[18px]">Hemina Hasan</h4>
+              <p class="text-gray-500">New York, US</p>
+            </div>
+          </div>
+          <div class="star-group flex justify-center gap-1 text-[26px]">
+            <i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-[30px] border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black">
+        <p class="text-[18px] font-[700] mb-10">"Our consultancy, with limited marketing resources, hesitated to hire agencies offering generic service packages."</p><hr>
+        <div class="flex justify-between items-center mt-10">
+          <div class="flex sm:flex-nowrap flex-wrap items-center gap-3">
+            <img src="https://hwp.creativegigstf.com/seom/assets/img/media/media-5.jpg" class="w-16 rounded-full" alt="Olivia Martinez">
+            <div>
+              <h4 class="font-[800] text-[18px]">Olivia Martinez</h4>
+              <p class="text-gray-500">New York, US</p>
+            </div>
+          </div>
+          <div class="star-group flex justify-center gap-1 text-[26px]">
+            <i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-[30px] border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black">
+        <p class="text-[18px] font-[700] mb-10">"As a strategy consultancy managing multiple projects, we had limited resources for online marketing and were hesitant to partner with agencies offering generic packages."</p><hr>
+        <div class="flex justify-between items-center mt-10">
+          <div class="flex sm:flex-nowrap flex-wrap items-center gap-3">
+            <img src="https://hwp.creativegigstf.com/seom/assets/img/media/media-5.jpg" class="w-16 rounded-full" alt="Olivia Martinez">
+            <div>
+              <h4 class="font-[800] text-[18px]">Hemina Hasan</h4>
+              <p class="text-gray-500">New York, US</p>
+            </div>
+          </div>
+          <div class="star-group flex justify-center gap-1 text-[26px]">
+            <i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i><i class="ri-star-fill text-[#FF7F49]"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- feedback part -->
+
+  <!-- pricing section -->
+  <div class="pricing xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto px-3 py-12">
+    <h5 class="uppercase text-[18px] font-[500] text-[#ff7f49] text-center">Pricing Plan</h5>
+    <h1 class="xl:text-[55px] text-[45px] font-[800] xl:leading-[65px] leading-[50px] text-center pt-3">Choose Your Best Option</h1>
+    <p class="text-[18px] text-center pt-3">Take a look at our comprehensive pricing plan to find the best option that suits your needs.</p>
+    <div class="price-box grid lg:grid-cols-3 grid-cols-1 gap-[30px] mt-16">
+      <div class="price-list">
+        <div class="relative bg-[#E8FFF7] duration-500 hover:bg-white rounded-[30px] border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black overflow-hidden px-5 py-10">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[#3DD09A] rounded-bl-full">
+            <svg class="absolute bottom-8 left-9 w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-[20px] font-[500]">BASIC PLAN</h3>
+          <div class="text-[45px] font-[800]">$15</div>
+          <p class="text-[20px] mb-8">Monthly Packages for Single Person</p><hr>
+          <ul class="space-y-4 mt-8">
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Unique Websites Design</span>
+              </li>
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Customer support limited to email</span>
+              </li>
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Support Your Business</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg>
+                  <span class="text-[18px]">Monthly review of Item Performance</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg>
+                  <span class="text-[18px]">keyword research</span>
+              </li>
+          </ul>
+          <button class="w-full py-4 bg-white border-2 border-black rounded-full font-bold hover:bg-black hover:text-white transition-colors duration-300 flex items-center justify-between px-5 text-[20px] group mt-10">PURCHASE NOW
+              <svg class="w-8 h-8 ml-2 duration-500 group-hover:rotate-[-45deg] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+          </button>
+        </div>
+      </div>
+      <div class="price-list">
+        <div class="relative bg-[#FFF0EA] duration-500 hover:bg-white rounded-[30px] border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black overflow-hidden px-5 py-10">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[#FF7F49] rounded-bl-full">
+            <svg class="absolute bottom-8 left-9 w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-[20px] font-[500] uppercase">Standard Plan</h3>
+          <div class="text-[45px] font-[800]">$79</div>
+          <p class="text-[20px] mb-8">Monthly Packages for Team</p><hr>
+          <ul class="space-y-4 mt-8">
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Unique Websites Design</span>
+              </li>
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Customer support limited to email</span>
+              </li>
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Support Your Business</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg>
+                  <span class="text-[18px]">Monthly review of Item Performance</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg>
+                  <span class="text-[18px]">keyword research</span>
+              </li>
+          </ul>
+          <button class="w-full py-4 bg-white border-2 border-black rounded-full font-bold hover:bg-black hover:text-white transition-colors duration-300 flex items-center justify-between px-5 text-[20px] group mt-10">PURCHASE NOW
+              <svg class="w-8 h-8 ml-2 duration-500 group-hover:rotate-[-45deg] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+          </button>
+        </div>
+      </div>
+      <div class="price-list">
+        <div class="relative bg-[#FFF8EA] duration-500 hover:bg-white rounded-[30px] border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black overflow-hidden px-5 py-10">
+          <div class="absolute top-0 right-0 w-24 h-24 bg-[#FFE149] rounded-bl-full">
+            <svg class="absolute bottom-8 left-9 w-10 h-10 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-[20px] font-[500] uppercase">Premium Plan</h3>
+          <div class="text-[45px] font-[800]">$145</div>
+          <p class="text-[20px] mb-8">Monthly Packages for Enterprise</p><hr>
+          <ul class="space-y-4 mt-8">
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Unique Websites Design</span>
+              </li>
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Customer support limited to email</span>
+              </li>
+              <li class="flex items-center">
+                  <svg class="w-5 h-5 text-[#ff7f49] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  <span class="text-[18px]">Support Your Business</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg>
+                  <span class="text-[18px]">Monthly review of Item Performance</span>
+              </li>
+              <li class="flex items-center text-gray-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"/></svg>
+                  <span class="text-[18px]">keyword research</span>
+              </li>
+          </ul>
+          <button class="w-full py-4 bg-white border-2 border-black rounded-full font-bold hover:bg-black hover:text-white transition-colors duration-300 flex items-center justify-between px-5 text-[20px] group mt-10">PURCHASE NOW
+              <svg class="w-8 h-8 ml-2 duration-500 group-hover:rotate-[-45deg] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- pricing section -->
+
+  <!-- blog section -->
+  <div class="blog-container bg-[#FCF1EC] pb-24">
+    <div class="blog xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto px-3 py-24">
+      <h5 class="uppercase text-[18px] font-[500] text-[#ff7f49] text-center">Blogs</h5>
+      <h1 class="xl:text-[55px] text-[45px] font-[800] xl:leading-[65px] leading-[50px] text-center pt-3">Latest News & Articles</h1>
+      <p class="text-[18px] text-center pt-3">Find the most up-to-date news and articles that offer insights into various topics.</p>
+      <div class="blog-item grid md:grid-cols-2 grid-cols-1 mt-14 gap-[30px]">
+        <div class="blog-list">
+          <div class="box">
+            <div class="rounded-3xl overflow-hidden mb-6 border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black">
+                <img src="https://hwp.creativegigstf.com/seom/assets/img/blog/blog-1.jpg" alt="" class="w-full h-[350px] object-cover transform hover:scale-105 transition-transform duration-1000">
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 text-gray-500 font-[500] text-[18px]">
+                <span>Jain Smith</span>
+                <span>/</span>
+                <span>Comment (03)</span>
+              </div>
+              <h3 class="text-[35px] font-[800] hover:text-[#FF7F49] transition-colors leading-[48px] cursor-pointer">Improve your Strategy with a Social Media Audit</h3>
+              <p class="text-[19px]">Strengthen your marketing plan by performing a detailed social media audit to identify opportunities and optimize performance effectively.</p>
+              <button class="before flex items-center bg-white px-12 py-4 mt-10 border-t-2 border-l-2 border-r-2 border-b-[5px] border-black rounded-full font-black text-[18px] cursor-pointer hover:text-white sm:w-auto w-full group">READ MORE <svg class="w-8 h-8 ml-2 duration-500 group-hover:rotate-[-45deg] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="blog-list">
+          <div class="box">
+            <div class="rounded-3xl overflow-hidden mb-6 border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black">
+                <img src="https://hwp.creativegigstf.com/seom/assets/img/blog/blog-2.jpg" alt="" class="w-full h-[350px] object-cover transform hover:scale-105 transition-transform duration-1000">
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-4 text-gray-500 font-[500] text-[18px]">
+                <span>Jain Smith</span>
+                <span>/</span>
+                <span>Comment (03)</span>
+              </div>
+              <h3 class="text-[35px] font-[800] hover:text-[#FF7F49] transition-colors leading-[48px] cursor-pointer">Improve your Strategy with a Social Media Audit</h3>
+              <p class="text-[19px]">Strengthen your marketing plan by performing a detailed social media audit to identify opportunities and optimize performance effectively.</p>
+              <button class="before flex items-center bg-white px-12 py-4 mt-10 border-t-2 border-l-2 border-r-2 border-b-[5px] border-black rounded-full font-black text-[18px] cursor-pointer hover:text-white sm:w-auto w-full group">READ MORE <svg class="w-8 h-8 ml-2 duration-500 group-hover:rotate-[-45deg] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blog section -->
+
+  <!-- form fillup -->
+  <div class="form relative flex justify-center">
+    <div class="bg-[#A095FF] w-full xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto rounded-[2rem] sm:py-16 py-8 px-4 flex flex-col sm:flex-row items-center justify-between shadow-lg border-t-[1px] border-l-[1px] border-r-[5px] border-b-[5px] border-black absolute bottom-[-100px]">
+      <h2 class="xl:text-[55px] text-[40px] font-[800] mb-4 sm:mb-0">Join our Newsletters.</h2>
+      <form class="flex justify-between h-[75px] sm:w-[480px] p-2 rounded-[12px] border-t-[1px] border-l-[1px] border-r-[4px] border-b-[4px] border-black bg-white">
+        <input type="email" class="w-[80%] border-none outline-none" placeholder="Enter Your Mail" required>
+        <input type="submit" class="bg-[#FF7F49] duration-500 hover:bg-black sm:px-7.5 px-3 rounded-[10px] text-white font-[800] sm:text-[20px] text-[16px] cursor-pointer" 
+        value="SUBSCRIBE">
+      </form>
+    </div>
+  </div>
+  <!-- form fillup -->
+
+  <!-- footer section -->
+  <footer>
+    <div class="footer xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] mx-auto px-3 pt-48 pb-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div>
+          <div class="flex items-center gap-2 mb-6">
+            <img src="https://hwp.creativegigstf.com/seom/assets/img/logo/header-logo-1.svg" alt="">
+          </div>
+          <p class="mb-6 text-[18px]">A reputable SEO agency begins with a analysis comprehensive analysis.</p>
+          <div class="star w-full mt-12 flex justify-center"><img src="https://hwp.creativegigstf.com/seom/assets/img/shape/shape-4.png" alt=""></div>
+        </div>
+        <div class="lg:pl-7">
+          <h3 class="text-[28px] font-bold mb-6">Company</h3>
+          <ul class="space-y-4">
+            <li><a href="#" class="duration-500 text-[20px] hover:text-[#ff7f49]">About us</a></li>
+            <li><a href="#" class="duration-500 text-[20px] hover:text-[#ff7f49]">Pricing plan</a></li>
+            <li><a href="#" class="duration-500 text-[20px] hover:text-[#ff7f49]">Blogs</a></li>
+            <li><a href="#" class="duration-500 text-[20px] hover:text-[#ff7f49]">Testimonial</a></li>
+            <li><a href="#" class="duration-500 text-[20px] hover:text-[#ff7f49]">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[28px] font-bold mb-6">Contact Us</h3>
+          <ul class="space-y-4">
+            <li class="duration-500 text-[20px] hover:text-[#ff7f49] cursor-pointer">seomagency1234@gmail.com</li>
+            <li class="duration-500 text-[20px] hover:text-[#ff7f49] cursor-pointer">+1 123 456 7890</li>
+            <li class="duration-500 text-[20px] hover:text-[#ff7f49] cursor-pointer">421 Allen, Mexico 4233</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-[28px] font-bold mb-6">Our Video</h3>
+          <div class="rounded-2xl overflow-hidden relative group">
+            <img src="https://hwp.creativegigstf.com/seom/assets/img/footer/footer-1.jpg" alt="" class="w-full h-40 object-cover">
+            <button class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 bg-[#ff7f49] duration-500 group-hover:bg-[#A095FF] rounded-full flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t">
+        <div class="flex flex-col lg:flex-row gap-5 justify-between items-center mb-4">
+          <p class="duration-500 text-[20px] hover:text-[#ff7f49] cursor-pointer font-[500]">© POWERED BY SEOM</p>
+          <div class="flex gap-4">
+            <a href="#" class="w-13 h-13 border-t-[1px] border-l-[1px] border-r-[4px] border-b-[4px] border-black rounded-full flex items-center justify-center duration-500 hover:bg-[#ff7f49] hover:text-white">
+              <svg class="w-5.5 h-5.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+              </svg>
+            </a>
+            <a href="#" class="w-13 h-13 border-t-[1px] border-l-[1px] border-r-[4px] border-b-[4px] border-black rounded-full flex items-center justify-center duration-500 hover:bg-[#ff7f49] hover:text-white">
+              <svg class="w-5.5 h-5.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#" class="w-13 h-13 border-t-[1px] border-l-[1px] border-r-[4px] border-b-[4px] border-black rounded-full flex items-center justify-center duration-500 hover:bg-[#ff7f49] hover:text-white">
+              <svg class="w-5.5 h-5.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" class="w-13 h-13 border-t-[1px] border-l-[1px] border-r-[4px] border-b-[4px] border-black rounded-full flex items-center justify-center duration-500 hover:bg-[#ff7f49] hover:text-white">
+              <svg class="w-5.5 h-5.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="flex gap-6">
+            <a href="#" class="duration-500 text-[20px] hover:text-[#ff7f49] cursor-pointer">Terms & conditions</a>
+            <a href="#" class="duration-500 text-[20px] hover:text-[#ff7f49] cursor-pointer">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> 
+  <!-- footer section -->
+
+  <!-- flowbite cdn --> 
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <!-- flowbite cdn -->
+
+  <!-- splide js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script> 
+  <!-- splide js cdn -->
+</body>
+<script>
+  var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: 4,
+  perMove: 1,
+  pagination: false,
+  arrows : false,
+  gap: "28px",
+  
+  breakpoints: {
+    1280: {
+      perPage: 3,
+    },
+    1024: {
+      perPage: 2,
+    },
+    680: {
+      perPage: 1,
+    },
+  }
+} );
+splide.mount();
+</script>
+</html>
